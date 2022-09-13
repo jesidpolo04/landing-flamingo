@@ -1,0 +1,33 @@
+/* Hamburger */
+button.hamburger{
+    padding-bottom: 5px;
+    padding-left: 24px;
+}
+.hamburger-inner.texto-primario, .hamburger-inner::after, .hamburger-inner::before{
+    background-color: white;
+}
+/* Cabecera */
+.cabecera{
+    height: 60px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--rojo-flamingo);
+    z-index: 100;
+}
+.logo-flamingo{
+    display: flex;
+    padding-left: 25px;
+    align-items: center;
+    height: 60px;
+}
+.logo-flamingo>img{
+    height: 40px;
+}
+
+.regresar{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+    color: white;
+}
