@@ -145,4 +145,25 @@ export class AppComponent implements OnInit {
         (reason) => {}
       );
   }
+
+  cambioTamano(tipoclase: string) {
+    alert('Entré a papá');
+    if (document != null) {
+      if (tipoclase == 'desplegado') {
+        document
+          .getElementById('conexionAngular')
+          ?.classList.remove('nodesplegado');
+        document.getElementById('conexionAngular')?.classList.add('desplegado');
+      } else {
+        document
+          .getElementById('conexionAngular')
+          ?.classList.remove('desplegado');
+        document
+          .getElementById('conexionAngular')
+          ?.classList.add('nodesplegado');
+      }
+    }
+
+    //document.getElementById("conexionAngular").style.height = tamano;
+  }
 }
